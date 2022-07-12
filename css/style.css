@@ -74,3 +74,57 @@ header{
     border-radius: 5px;
     color: white;
 }
+.package{
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+.package h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #03045E;
+    margin-bottom: 35px;
+}
+.hr{
+    width: 1px;
+    height: 200px;
+    background-color: #03045E;
+    opacity: 0.1;
+}
+.package-info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 110px;
+
+}
+.domain{
+    font-weight: 700;
+    font-size: 20px;
+    color: #0098FF;
+}
+.find-domain{
+    display: flex;
+}
+.find-domain button{
+    margin-left: -20px;
+    position: relative;
+    z-index: 1;
+}
+.find-domain input{
+    width: 450px;
+    border: none;
+    padding: 20px;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+}
+.find-domain input:focus{
+    outline: none;
+}
+.monthly-price{
+    color: #03045E;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.3;
+}
