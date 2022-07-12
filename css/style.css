@@ -21,7 +21,8 @@ header {
 }
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0px 280px;
   padding-top: 42px;
 }
 
@@ -43,7 +44,9 @@ header {
 }
 .banner {
   display: flex;
-  gap: 150px;
+  justify-content: center !important;
+  align-items: center;
+  gap: 200px;
 }
 .info {
   width: 550px;
@@ -87,7 +90,7 @@ header {
   color: #03045e;
   margin-bottom: 35px;
 }
-.hr {
+.hrx {
   width: 1px;
   height: 200px;
   background-color: #03045e;
@@ -267,24 +270,29 @@ header {
   gap: 80px;
 }
 .active-card {
-  background: #0098ff;
+  background-color: #0099ffb7;
   color: white !important;
+  position: relative;
+  z-index: -1;
 }
 .active-card p {
-  color: white !important;
+  color: rgb(255, 255, 255);
+  /* background-color: white; */
 }
 .active-color {
   color: white !important;
 }
 .color2 {
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
 }
+
 .footer{
     background: #F6F6F6;
     display: flex;
     gap: 100px;
     justify-content: center;
     padding-top: 100px;
+    padding-bottom: 40px;
 }
 .footer img {
   width: 120px;
@@ -339,7 +347,7 @@ header {
 
 }
 .testimonial-section{
-    margin: 120px 0px 150px 0px;
+    margin: 120px 0px 100px 0px;
 }
 .testimonial-cards {
     margin-top: 90px;
@@ -360,7 +368,7 @@ header {
   .hr {
     width: 242px;
     height: 2px;
-    background-color: #000000cb;
+    background-color: #00000011 !important;
     margin: 25px auto;
   }
   .testimonial-card img {
