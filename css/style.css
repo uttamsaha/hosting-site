@@ -128,3 +128,60 @@ header{
     font-weight: 500;
     opacity: 0.3;
 }
+
+/* services section  */
+.services{
+   display: grid;
+   grid-template-columns: 500px 500px 500px;
+   place-content: center;
+   place-items: center;
+   grid-row-gap: 80px;
+}
+.service-section{
+    background-color: #f6f6f695;
+    width: 100%;
+    padding: 150px 0px;
+}
+.common-heading{
+    font-size: 40px;
+    font-weight: 700;
+    color: #03045E;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.service h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #03045E;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 30px 0px;
+    text-align: center;
+}
+.service p{
+    color: #03045E;
+    opacity: 0.5;
+    text-align: justify;
+}
+.service{
+    width: 330px;
+    padding: 30px;
+}
+.image-container{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+.image-container img{
+    width: 60px;
+    height: 60px;
+}
+.service:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
