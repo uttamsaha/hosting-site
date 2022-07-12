@@ -10,6 +10,7 @@
 header {
   background-color: #f7f8fd;
   min-height: 100vh;
+  margin-top: -150px;
 }
 .container {
   width: 1300px;
@@ -21,10 +22,18 @@ header {
   height: 35px;
 }
 .nav {
+    padding-top: 40px;
   display: flex;
-  justify-content: space-between;
-  padding: 0px 280px;
-  padding-top: 42px;
+  justify-content: space-around;
+  /* padding: 0px 220px; */
+
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  /* padding: 25px 0; */
+  transition: all 0.3s ease;
+  /* padding-top: -42px; */
+
 }
 
 .nav-items ul {
@@ -47,7 +56,8 @@ header {
   display: flex;
   justify-content: center !important;
   align-items: center;
-  gap: 200px;
+  gap: 250px;
+  height: 100vh;
 }
 .info {
   width: 550px;
@@ -444,4 +454,168 @@ header {
     bottom: 32px;
     pointer-events: auto;
     opacity: 1;
+}
+/* // responsive  */
+.icon {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+.menu-list .cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+
+.sticky{
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+@media (max-width:1230px){
+    .content{
+        padding: 0 60px;
+    }
+}
+@media (max-width:100px){
+    .content{
+        padding: 0 40px;
+    }
+}
+@media (max-width:868px){
+    .icon{
+        display: block;
+        color: black;
+    }
+    body.disabled{
+        overflow: hidden;
+    }
+    .icon.hide{
+        display: none;
+    }
+    /* // mobile e menu full screeen  */
+    .nav .menu-list{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        left: -100%;
+        top: 0px;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        background: #222;
+        transition:  all 0.3s ease;
+    }
+    .nav.show .menu-list{
+        left: 0%;
+    }
+    .cancel-btn{
+        color: white;
+    }
+    .nav .menu-list li{
+        margin-top: 45px;
+    }
+    .nav .menu-list li a{
+        font-size: 23px;
+        margin-left: -100%;
+        color: white;
+        transition:  0.6s cubic-bezier(0.68,-0.55,265,1.55);
+        
+    }
+    .nav.show .menu-list li a {
+        margin-left: 0;
+    }
+
+    /* ------------------------------ responsive ------------------------- */
+    .container{
+        width: 100%;
+
+    }
+    .nav{
+        justify-content: space-around;
+        /* padding-left: 20px; */
+    }
+    .banner{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .info{
+        width: 360px;
+    }
+    .info h1{
+        font-size: 35px;
+        line-height: 55px;
+    }
+    .img img{
+        width: 100%;
+    }
+    .package{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .find-domain input{
+        width: 200px;
+        margin-left: 20px;
+        /* justify-content: center; */
+    }
+    .package h1{
+        font-size: 25px !important;
+        text-align: center;
+    }
+    .hrx{
+        display: none;
+    }
+    .package-info{
+        grid-template-columns: repeat(2, 80px);
+        place-content: center;
+        place-items: center;
+        grid-column-gap: 80px;
+        grid-row-gap: 20px;
+        margin-top: 20px;
+    }
+    .common-heading{
+        font-size: 30px;
+
+    }
+    .services{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 100px;
+    }
+    .service{
+        width: 280px;
+    }
+    .summary{
+        flex-direction: column;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .plan-cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .copyright{
+        flex-direction: column;
+        align-items: center;
+    }
+    .to-top{
+        display: none;
+    }
+    .testimonial-section{
+        display: none;
+    }
+}
+@media (max-width:380px){
+    .nav .logo a{
+        font-size: 27px;
+    }
 }
