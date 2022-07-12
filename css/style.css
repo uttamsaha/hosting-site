@@ -1,212 +1,281 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Ubuntu:wght@400;500;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
 }
-header{
-    background-color: #F7F8FD;
-    min-height: 100vh;
+header {
+  background-color: #f7f8fd;
+  min-height: 100vh;
 }
-.container{
-    width: 1300px;
-    margin: 0 auto;
-    /* background-color: red; */
+.container {
+  width: 1300px;
+  margin: 0 auto;
+  /* background-color: red; */
 }
-.logo img{
-    width: 120px;
-    height: 35px;
+.logo img {
+  width: 120px;
+  height: 35px;
 }
-.nav{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 42px;
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 42px;
 }
 
 .nav-items ul {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
-.nav-items ul li a{
-    color: #03045E;
-    font-weight: 500;
+.nav-items ul li a {
+  color: #03045e;
+  font-weight: 500;
 }
 
-.login a{
-    font-weight: 600 !important;
-    border-radius: 5px;
-    background-color: #03045E;
-    padding: 10px 15px;
-    color: white !important;
-}
-.banner{
-    display: flex;
-    gap: 150px;
-}
-.info{
-    width: 550px;
-}
-.info h1{
-    color: #03045E;
-    font-size: 48px;
-    font-family: 'Ubuntu', sans-serif;
-    line-height: 68px;
-    margin-bottom: 20px;
+.login a {
+  font-weight: 600 !important;
+  border-radius: 5px;
+  background-color: #03045e;
+  padding: 10px 15px;
+  color: white !important;
 }
 .banner {
-    margin-top: 150px;
+  display: flex;
+  gap: 150px;
 }
-.banner .info{
-    margin-top: 120px;
+.info {
+  width: 550px;
 }
-.info p{
-    color: #03055e8d;
-    margin-bottom: 30px;
+.info h1 {
+  color: #03045e;
+  font-size: 48px;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 68px;
+  margin-bottom: 20px;
 }
-.price-btn{
-    border: none;
-    background-color: #0098FF;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 15px 25px;
-    border-radius: 5px;
-    color: white;
+.banner {
+  margin-top: 150px;
 }
-.package{
-    display: flex;
-    margin-top: 150px;
-    margin-bottom: 100px;
-    justify-content: space-between;
+.banner .info {
+  margin-top: 120px;
 }
-.package h1{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    color: #03045E;
-    margin-bottom: 35px;
+.info p {
+  color: #03055e8d;
+  margin-bottom: 30px;
 }
-.hr{
-    width: 1px;
-    height: 200px;
-    background-color: #03045E;
-    opacity: 0.1;
+.price-btn {
+  border: none;
+  background-color: #0098ff;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  color: white;
 }
-.package-info{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 110px;
-
+.package {
+  display: flex;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  justify-content: space-between;
 }
-.domain{
-    font-weight: 700;
-    font-size: 20px;
-    color: #0098FF;
+.package h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #03045e;
+  margin-bottom: 35px;
 }
-.find-domain{
-    display: flex;
+.hr {
+  width: 1px;
+  height: 200px;
+  background-color: #03045e;
+  opacity: 0.1;
 }
-.find-domain button{
-    margin-left: -20px;
-    position: relative;
-    z-index: 1;
+.package-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 110px;
 }
-.find-domain input{
-    width: 450px;
-    border: none;
-    padding: 20px;
-    background-color: #F6F6F6;
-    border-radius: 5px;
+.domain {
+  font-weight: 700;
+  font-size: 20px;
+  color: #0098ff;
 }
-.find-domain input:focus{
-    outline: none;
+.find-domain {
+  display: flex;
 }
-.monthly-price{
-    color: #03045E;
-    font-size: 15px;
-    font-weight: 500;
-    opacity: 0.3;
+.find-domain button {
+  margin-left: -20px;
+  position: relative;
+  z-index: 1;
+}
+.find-domain input {
+  width: 450px;
+  border: none;
+  padding: 20px;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+}
+.find-domain input:focus {
+  outline: none;
+}
+.monthly-price {
+  color: #03045e;
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.3;
 }
 
 /* services section  */
-.services{
-   display: grid;
-   grid-template-columns: 500px 500px 500px;
-   place-content: center;
-   place-items: center;
-   grid-row-gap: 80px;
+.services {
+  display: grid;
+  grid-template-columns: 500px 500px 500px;
+  place-content: center;
+  place-items: center;
+  grid-row-gap: 80px;
 }
-.service-section{
-    background-color: #f6f6f695;
-    width: 100%;
-    padding: 150px 0px;
+.service-section {
+  background-color: #f6f6f695;
+  width: 100%;
+  padding: 150px 0px;
 }
-.common-heading{
-    font-size: 40px;
-    font-weight: 700;
-    color: #03045E;
-    text-align: center;
-    margin-bottom: 60px;
+.common-heading {
+  font-size: 40px;
+  font-weight: 700;
+  color: #03045e;
+  text-align: center;
+  margin-bottom: 60px;
 }
 .service h2 {
-    font-size: 20px;
-    font-weight: 700;
-    color: #03045E;
-    font-family: 'Ubuntu', sans-serif;
-    margin: 30px 0px;
-    text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #03045e;
+  font-family: "Ubuntu", sans-serif;
+  margin: 30px 0px;
+  text-align: center;
 }
-.service p{
-    color: #03045E;
-    opacity: 0.5;
-    text-align: justify;
+.service p {
+  color: #03045e;
+  opacity: 0.5;
+  text-align: justify;
 }
-.service{
-    width: 330px;
-    padding: 30px;
+.service {
+  width: 330px;
+  padding: 30px;
 }
-.image-container{
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    background-color: #F6F6F6;
-    border-radius: 10px;
-    display: grid;
-    place-items: center;
+.image-container {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
 }
-.image-container img{
-    width: 60px;
-    height: 60px;
+.image-container img {
+  width: 60px;
+  height: 60px;
 }
-.service:hover{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    border-radius: 10px;
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
+.service:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 
 /* //summary section  */
-.summary{
-    height: 315px;
-    background-color: #0098FF;
+.summary {
+  height: 315px;
+  background-color: #0098ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.summary-card {
+  width: 250px;
+  text-align: center;
+}
+.summary-card h1 {
+  font-weight: bold;
+  color: white;
+  font-size: 60px;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 10px;
+}
+.summary-card p {
+  color: white;
+  font-size: 20px;
+}
+.plan-card {
+  width: 330px;
+  text-align: center;
+  padding: 30px 0px;
+  border-radius: 5px;
+}
+.plan-card .plan-name {
+  font-weight: 700;
+  font-size: 16px;
+  color: #0098ff;
+  font-family: "Ubuntu", sans-serif;
+}
+.plan-section {
+  margin: 150px 0px 150px 0px;
+}
+.plan-card h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #03045e;
+  margin: 16px 0px 30px 0px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.feature {
+  font-size: 15px;
+  color: #03045e;
+  opacity: 0.5;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.plan-card span {
+  font-weight: 600;
+  font-size: 15px;
+  color: #03045e;
+  opacity: 0.5;
+}
+
+.plan-card button {
+  border: none;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  padding: 11px 35px;
+  background: #03045e;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+.hr-2{
+    width: auto;
+    height: 1px;
+    background-color: #F6F6F6;;
+}
+.plan-cards{
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 100px;
+    gap: 80px;
 }
-.summary-card{
-    width: 250px;
-    text-align: center;
+.active-card{
+    background: #0098FF;
+    color: white !important;
 }
-.summary-card h1{
-    font-weight: bold;
-    color: white;
-    font-size: 60px;
-    font-family: 'Ubuntu', sans-serif;
-    margin-bottom: 10px;
+.active-card p{
+    color: white !important;
 }
-.summary-card p{
-    color: white;
-    font-size: 20px;
+.active-color{
+    color: white !important;
+}
+.color2{
+    color: white !important;
 }
