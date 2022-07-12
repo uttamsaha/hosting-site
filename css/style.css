@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: #F7F8FD;
+    min-height: 100vh;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+.logo img{
+    width: 120px;
+    height: 35px;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 42px;
+}
+
+.nav-items ul {
+    display: flex;
+    gap: 40px;
+}
+.nav-items ul li a{
+    color: #03045E;
+    font-weight: 500;
+}
+
+.login a{
+    font-weight: 600 !important;
+    border-radius: 5px;
+    background-color: #03045E;
+    padding: 10px 15px;
+    color: white !important;
+}
+.banner{
+    display: flex;
+    gap: 150px;
+}
+.info{
+    width: 550px;
+}
+.info h1{
+    color: #03045E;
+    font-size: 48px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 68px;
+    margin-bottom: 20px;
+}
+.banner {
+    margin-top: 150px;
+}
+.banner .info{
+    margin-top: 120px;
+}
+.info p{
+    color: #03055e8d;
+    margin-bottom: 30px;
+}
+.price-btn{
+    border: none;
+    background-color: #0098FF;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: white;
+}
