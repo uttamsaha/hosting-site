@@ -185,3 +185,28 @@ header{
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
 }
+
+/* //summary section  */
+.summary{
+    height: 315px;
+    background-color: #0098FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.summary-card{
+    width: 250px;
+    text-align: center;
+}
+.summary-card h1{
+    font-weight: bold;
+    color: white;
+    font-size: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 10px;
+}
+.summary-card p{
+    color: white;
+    font-size: 20px;
+}
