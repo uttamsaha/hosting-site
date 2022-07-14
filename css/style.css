@@ -602,6 +602,7 @@ header {
     .footer{
         flex-direction: column;
         align-items: center;
+        gap: 56px;
     }
     .copyright{
         flex-direction: column;
@@ -610,8 +611,27 @@ header {
     .to-top{
         display: none;
     }
-    .testimonial-section{
-        display: none;
+    
+    /* // testimonial section  */
+    .testimonial-cards{
+      padding: 0px !important;
+    }
+    .testimonial-card img{
+      left: 10px;
+    }
+    
+    /* //summary section  */
+    .summary{
+      padding: 80px 0px;
+    }
+    .summary-card h1{
+      font-size: 40px;
+    }
+    .summary-card > p{
+      font-size: 20px;
+    }
+    .copyright{
+      padding: 25px 0px;
     }
 }
 @media (max-width:380px){
